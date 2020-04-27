@@ -3,6 +3,7 @@
 A Spring Boot application with Spring Security that demonstrates database authentication using JPA.
 
 We have below 3 endpoints configured for different roles:
+
 `http://localhost:8080/` - for all users
 
 `http://localhost:8080/user` - accessible only for users having 'ROLE_USER' or 'ROLE_ADMIN' role
