@@ -4,7 +4,9 @@ A Spring Boot application with Spring Security that demonstrates database authen
 
 We have below 3 endpoints configured for different roles:
 `http://localhost:8080/` - for all users
+
 `http://localhost:8080/user` - accessible only for users having 'ROLE_USER' or 'ROLE_ADMIN' role
+
 `http://localhost:8080/admin` - accessible only for users having 'ROLE_ADMIN' role
 
 ## Running application locally
@@ -23,13 +25,14 @@ mvnw spring-boot:run
 ## H2 setup
 Since we have added, `H2` dependency, SpringBoot will automatically configure the `datasource` for us.
 In production env, we will have to configure the datasource.
+
 H2 console can be accessed via - http://localhost:8080/h2-console
 
 #### data.sql & schema.sql
-our schema for `User` table is in - __schema.sql__ file in `resource` folder.
+Our schema for `User` table is in - __schema.sql__ file in `resource` folder.
 SpringBoot automatically picks it up at the start.
 
-we have inserted test users in the `User` table using __data.sql__ file in `resource` folder.
+We have inserted test users in the `User` table using __data.sql__ file in `resource` folder.
 SpringBoot automatically picks it up at the start.
 
 #### Test users
